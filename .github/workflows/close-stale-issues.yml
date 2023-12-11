@@ -11,7 +11,7 @@ jobs:
   stale-resolved-issues:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/stale@v8
+      - uses: actions/stale@v9
         name: Close issues labeled as resolved after 1 day of inactivity
         with:
           any-of-labels: "Resolution-Answered,Resolution-Duplicate,Resolution-External,Resolution-Fixed,Resolution-Inactive"
@@ -22,7 +22,7 @@ jobs:
   stale-feedback-issues:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/stale@v8
+      - uses: actions/stale@v9
         name: Close issues labeled as needs feedback after 1 week of inactivity
         with:
           any-of-labels: "Needs: Author Feedback,Needs: Fix Verification,Needs: Repro Info"
